@@ -15,6 +15,9 @@ requires-python = ">= 3.9"
 version = {attr = "ctc_forced_aligner.__version__"}
 dependencies = {file = ["requirements.txt"]}
 
+[tool.setuptools.packages.find]
+where = ["."]
+
 [project.optional-dependencies]
 dev = ["black==23.*", "flake8==7.*", "flake8-pyproject==1.*", "isort==5.*", "pytest==7.*"]
 
